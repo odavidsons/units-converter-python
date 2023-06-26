@@ -8,7 +8,7 @@ Class for rendering the main interface for the app
 import tkinter as tk
 from view.length import length
 from view.mass import mass
-
+from view.temperature import temperature
 
 class main():
 
@@ -31,7 +31,7 @@ class main():
         btnLength.grid(row=0,pady=5)
         btnMass = tk.Button(self.navFrame,text="Mass",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(mass(self.contentFrame))])
         btnMass.grid(row=1,pady=5)
-        btnTemperature = tk.Button(self.navFrame,text="Temperature",font=self.fontMedium)
+        btnTemperature = tk.Button(self.navFrame,text="Temperature",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(temperature(self.contentFrame))])
         btnTemperature.grid(row=2,pady=5)
         btnPower = tk.Button(self.navFrame,text="Power",font=self.fontMedium)
         btnPower.grid(row=3,pady=5)
