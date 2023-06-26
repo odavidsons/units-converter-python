@@ -9,6 +9,7 @@ import tkinter as tk
 from view.length import length
 from view.mass import mass
 from view.temperature import temperature
+from view.power import power
 
 class main():
 
@@ -33,18 +34,10 @@ class main():
         btnMass.grid(row=1,pady=5)
         btnTemperature = tk.Button(self.navFrame,text="Temperature",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(temperature(self.contentFrame))])
         btnTemperature.grid(row=2,pady=5)
-        btnPower = tk.Button(self.navFrame,text="Power",font=self.fontMedium)
+        btnPower = tk.Button(self.navFrame,text="Power",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(power(self.contentFrame))])
         btnPower.grid(row=3,pady=5)
         btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
         btnCategory.grid(row=4,pady=5)
-        btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
-        btnCategory.grid(row=5,padx=10,pady=5)
-        btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
-        btnCategory.grid(row=6,padx=10,pady=5)
-        btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
-        btnCategory.grid(row=7,padx=10,pady=5)
-        btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
-        btnCategory.grid(row=8,padx=10,pady=5)
         labelWelcome = tk.Label(self.contentFrame,text="Welcome. Choose a category on the left menu to start converting!",font=self.fontLarge)
         labelWelcome.grid(sticky="nsew")
         self.make_dynamic(self.navTextFrame)
