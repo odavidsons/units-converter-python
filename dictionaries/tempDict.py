@@ -1,3 +1,10 @@
+"""
+Author: David Santos
+Repository: https://github.com/odavidsons/units-converter-python
+Year: 2023
+
+Dictionary for temperature conversions
+"""
 temperature_values = [
     "Cº (Celsius)",
     "Fº (Fahrenheit)",

@@ -3,7 +3,7 @@ Author: David Santos
 Repository: https://github.com/odavidsons/units-converter-python
 Year: 2023
 
-Class for rendering the temperature coversion frame
+Class for rendering the power coversion frame
 """
 import tkinter as tk
 import dictionaries.powerDict

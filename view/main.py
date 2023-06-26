@@ -10,6 +10,7 @@ from view.length import length
 from view.mass import mass
 from view.temperature import temperature
 from view.power import power
+from view.speed import speed
 
 class main():
 
@@ -36,8 +37,8 @@ class main():
         btnTemperature.grid(row=2,pady=5)
         btnPower = tk.Button(self.navFrame,text="Power",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(power(self.contentFrame))])
         btnPower.grid(row=3,pady=5)
-        btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
-        btnCategory.grid(row=4,pady=5)
+        btnSpeed = tk.Button(self.navFrame,text="Speed",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(speed(self.contentFrame))])
+        btnSpeed.grid(row=4,pady=5)
         labelWelcome = tk.Label(self.contentFrame,text="Welcome. Choose a category on the left menu to start converting!",font=self.fontLarge)
         labelWelcome.grid(sticky="nsew")
         self.make_dynamic(self.navTextFrame)
