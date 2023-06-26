@@ -45,5 +45,6 @@ class speed(tk.Frame):
         except: print("Enter a valid number")
         try:
             conversion = dictionaries.speedDict.speed_conversions[from_unit][to_unit]
-            self.result.config(text=(conversion * value))
+            result = conversion*value
+            self.result.config(text=result)
         except: print("Error in calculation")

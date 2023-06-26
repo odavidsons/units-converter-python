@@ -20,15 +20,10 @@ class main():
     def __init__(self,master):
         self.menubar = tk.Menu(master)
         self.menubar.add_command(label="Exit",command=master.destroy)
-        self.navTextFrame = tk.Text(master)
-        self.navTextFrame.grid(row=0,column=0,padx=5,pady=20)
-        self.navFrame = tk.Frame(self.navTextFrame)
-        self.navFrame.grid(row=0,column=0,sticky="nsew")
+        self.navFrame = tk.Frame(master)
+        self.navFrame.grid(row=0,column=0,sticky="nsew",padx=5,pady=20)
         self.contentFrame = tk.Frame(master)
         self.contentFrame.grid(row=0,column=1,sticky="nsew",padx=5,pady=20)
-        nav_scrollbar_y = tk.Scrollbar(self.navTextFrame,orient="vertical")
-        nav_scrollbar_y.grid(row=0,column=1,sticky="ns")
-        self.navTextFrame.config(yscrollcommand=nav_scrollbar_y.set)
         btnLength = tk.Button(self.navFrame,text="Length",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(length(self.contentFrame))])
         btnLength.grid(row=0,pady=5)
         btnMass = tk.Button(self.navFrame,text="Mass",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(mass(self.contentFrame))])
@@ -41,7 +36,7 @@ class main():
         btnSpeed.grid(row=4,pady=5)
         labelWelcome = tk.Label(self.contentFrame,text="Welcome. Choose a category on the left menu to start converting!",font=self.fontLarge)
         labelWelcome.grid(sticky="nsew")
-        self.make_dynamic(self.navTextFrame)
+        self.make_dynamic(self.navFrame)
         self.make_dynamic(self.contentFrame)
         
     #Make a window's widgets dynamic when resizing
