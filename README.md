@@ -19,7 +19,7 @@ Currently, the app supports the following conversions (Each of them can be conve
   - cm (Centimeter)
   - mm (Milimeter)
   - um (Micrometer)
-  - nm (Nanometer
+  - nm (Nanometer)
 
 - Mass:
   - Kt (Kilotonne)
@@ -53,3 +53,15 @@ Currently, the app supports the following conversions (Each of them can be conve
   - Meters per second (m/s)
   - Feet per second (fps)
   - Knots (kt)
+
+- Area:
+  - km² (Square Kilometer)
+  - m² (Square Meter)
+  - mm² (Square Centimeter)
+  - m² (Square Milimeter)
+  - ha (Hectare)
+  - ac (Acre)
+  - mile² (Square mile)
+  - ft² (Square feet)
+  - in² (Square inches)
+  - y² (Square yard)
