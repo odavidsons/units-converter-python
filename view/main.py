@@ -8,7 +8,9 @@ Class for rendering the main interface for the app
 import tkinter as tk
 from view.length import length
 from view.mass import mass
-
+from view.temperature import temperature
+from view.power import power
+from view.speed import speed
 
 class main():
 
@@ -18,36 +20,23 @@ class main():
     def __init__(self,master):
         self.menubar = tk.Menu(master)
         self.menubar.add_command(label="Exit",command=master.destroy)
-        self.navTextFrame = tk.Text(master)
-        self.navTextFrame.grid(row=0,column=0,padx=5,pady=20)
-        self.navFrame = tk.Frame(self.navTextFrame)
-        self.navFrame.grid(row=0,column=0,sticky="nsew")
+        self.navFrame = tk.Frame(master)
+        self.navFrame.grid(row=0,column=0,sticky="nsew",padx=5,pady=20)
         self.contentFrame = tk.Frame(master)
         self.contentFrame.grid(row=0,column=1,sticky="nsew",padx=5,pady=20)
-        nav_scrollbar_y = tk.Scrollbar(self.navTextFrame,orient="vertical")
-        nav_scrollbar_y.grid(row=0,column=1,sticky="ns")
-        self.navTextFrame.config(yscrollcommand=nav_scrollbar_y.set)
         btnLength = tk.Button(self.navFrame,text="Length",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(length(self.contentFrame))])
         btnLength.grid(row=0,pady=5)
         btnMass = tk.Button(self.navFrame,text="Mass",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(mass(self.contentFrame))])
         btnMass.grid(row=1,pady=5)
-        btnTemperature = tk.Button(self.navFrame,text="Temperature",font=self.fontMedium)
+        btnTemperature = tk.Button(self.navFrame,text="Temperature",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(temperature(self.contentFrame))])
         btnTemperature.grid(row=2,pady=5)
-        btnPower = tk.Button(self.navFrame,text="Power",font=self.fontMedium)
+        btnPower = tk.Button(self.navFrame,text="Power",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(power(self.contentFrame))])
         btnPower.grid(row=3,pady=5)
-        btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
-        btnCategory.grid(row=4,pady=5)
-        btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
-        btnCategory.grid(row=5,padx=10,pady=5)
-        btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
-        btnCategory.grid(row=6,padx=10,pady=5)
-        btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
-        btnCategory.grid(row=7,padx=10,pady=5)
-        btnCategory = tk.Button(self.navFrame,text="Category",font=self.fontMedium)
-        btnCategory.grid(row=8,padx=10,pady=5)
+        btnSpeed = tk.Button(self.navFrame,text="Speed",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(speed(self.contentFrame))])
+        btnSpeed.grid(row=4,pady=5)
         labelWelcome = tk.Label(self.contentFrame,text="Welcome. Choose a category on the left menu to start converting!",font=self.fontLarge)
         labelWelcome.grid(sticky="nsew")
-        self.make_dynamic(self.navTextFrame)
+        self.make_dynamic(self.navFrame)
         self.make_dynamic(self.contentFrame)
         
     #Make a window's widgets dynamic when resizing
