@@ -3,7 +3,7 @@ Author: David Santos
 Repository: https://github.com/odavidsons/units-converter-python
 Year: 2023
 
-Dictionary for mass conversions
+Dictionary for are conversions
 """
 area_values = [
     "km² (Square Kilometer)",
