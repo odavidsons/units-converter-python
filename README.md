@@ -2,7 +2,7 @@
 An application for unit conversion with a user interface.
 Made with the tkinter GUI toolkit and python 3.10
 
-![image](https://github.com/odavidsons/units-converter-python/assets/122760540/154b6b6e-5750-479e-bc71-7eb4064960d7)
+![image](https://github.com/odavidsons/units-converter-python/assets/122760540/96d3511d-79bb-45bb-89b8-d9bc6b6d9271)
 
 ## Conversions
 Currently, the app supports the following conversions (Each of them can be converted to any of the others):
