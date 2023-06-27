@@ -12,6 +12,7 @@ from view.temperature import temperature
 from view.power import power
 from view.speed import speed
 from view.area import area
+from view.volume import volume
 
 class main():
 
@@ -37,6 +38,8 @@ class main():
         btnSpeed.grid(row=4,pady=5)
         btnArea = tk.Button(self.navFrame,text="Area",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(area(self.contentFrame))])
         btnArea.grid(row=5,pady=5)
+        btnVolume = tk.Button(self.navFrame,text="Volume",font=self.fontMedium,bg="#2e708c",command= lambda: [self.clearFrame(self.contentFrame),self.show_frame(volume(self.contentFrame))])
+        btnVolume.grid(row=6,pady=5)
         labelWelcome = tk.Label(self.contentFrame,text="Welcome. Choose a category on the left menu to start converting!",font=self.fontLarge)
         labelWelcome.grid(sticky="nsew")
         self.make_dynamic(self.navFrame)
