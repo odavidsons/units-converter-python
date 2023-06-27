@@ -65,3 +65,18 @@ Currently, the app supports the following conversions (Each of them can be conve
   - ft² (Square feet)
   - in² (Square inches)
   - y² (Square yard)
+
+- Volume:
+  - km³ (Cubic kilometers)
+  - m³ (Cubic meters)
+  - cm³ (Cubic centimeters)
+  - mm³ (Cubic milimeters)
+  - l (Liters)
+  - dl (Deciliters)
+  - cd (Centiliters)
+  - ml (Mililiter)
+  - gl (Galons)
+  - miles³ (Cubic miles)
+  - ft³ (Cubic feets)
+  - in³ (Cubid inches)
+  - y³ (Cubic yards)
