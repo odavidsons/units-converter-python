@@ -45,5 +45,6 @@ class length(tk.Frame):
         except: print("Enter a valid number")
         try:
             conversion = dictionaries.lengthDict.length_conversions[from_unit][to_unit]
-            self.result.config(text=(conversion * value))
+            result = conversion * value
+            self.result.config(text=f"{result:,}")
         except: print("Error in calculation")
