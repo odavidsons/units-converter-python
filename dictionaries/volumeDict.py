@@ -17,7 +17,7 @@ power_values = [
     "gl (Galons)",
     "miles³ (Cubic miles)",
     "ft³ (Cubic feets)",
-    "in³ (Cubid inches)",
+    "in³ (Cubic inches)",
     "y³ (Cubic yards)"
 
 ]
@@ -35,7 +35,7 @@ power_conversions = {
         "gl (Galons)": 264172176858,
         "miles³ (Cubic miles)": 0.2399128636,
         "ft³ (Cubic feets)": 35314666721,
-        "in³ (Cubid inches)": 61023744094732,
+        "in³ (Cubic inches)": 61023744094732,
         "y³ (Cubic yards)": 1307950619.3
     },
     "m³ (Cubic meters)": {
@@ -50,7 +50,7 @@ power_conversions = {
         "gl (Galons)": 264.17217686,
         "miles³ (Cubic miles)": 0.0000000002399128636,
         "ft³ (Cubic feets)": 35.314666721,
-        "in³ (Cubid inches)": 61023.744095,
+        "in³ (Cubic inches)": 61023.744095,
         "y³ (Cubic yards)": 1.3079506193
     },
     "cm³ (Cubic centimeters)": {
@@ -65,7 +65,7 @@ power_conversions = {
         "gl (Galons)": 0.0002641722,
         "miles³ (Cubic miles)": 0.0000000000000002399128636,
         "ft³ (Cubic feets)": 0.0000353147,
-        "in³ (Cubid inches)": 0.0610237441,
+        "in³ (Cubic inches)": 0.0610237441,
         "y³ (Cubic yards)": 0.000001308
     },
     "mm³ (Cubic milimeters)": {
@@ -80,7 +80,7 @@ power_conversions = {
         "gl (Galons)": 0.0000002641721768,
         "miles³ (Cubic miles)": 0.0000000000000000002399128636,
         "ft³ (Cubic feets)": 0.00000003531466672,
-        "in³ (Cubid inches)": 0.0000610237,
+        "in³ (Cubic inches)": 0.0000610237,
         "y³ (Cubic yards)": 0.000000001307950619
     },
     "l (Liters)": {
@@ -95,7 +95,7 @@ power_conversions = {
         "gl (Galons)": 0.2641721769,
         "miles³ (Cubic miles)": 0.0000000000002399128636,
         "ft³ (Cubic feets)": 0.0353146667,
-        "in³ (Cubid inches)": 61.023744095,
+        "in³ (Cubic inches)": 61.023744095,
         "y³ (Cubic yards)": 0.0013079506
     },
     "dl (Deciliters)": {
@@ -110,7 +110,7 @@ power_conversions = {
         "gl (Galons)": 1,
         "miles³ (Cubic miles)": 1,
         "ft³ (Cubic feets)": 1,
-        "in³ (Cubid inches)": 1,
+        "in³ (Cubic inches)": 1,
         "y³ (Cubic yards)": 1
     },
     "cd (Centiliters)": {
@@ -125,7 +125,7 @@ power_conversions = {
         "gl (Galons)": 1,
         "miles³ (Cubic miles)": 1,
         "ft³ (Cubic feets)": 1,
-        "in³ (Cubid inches)": 1,
+        "in³ (Cubic inches)": 1,
         "y³ (Cubic yards)": 1
     },
     "ml (Mililiter)": {
@@ -140,22 +140,82 @@ power_conversions = {
         "gl (Galons)": 0.0002641722,
         "miles³ (Cubic miles)": 0.0000000000000002399128636,
         "ft³ (Cubic feets)": 0.0000353147,
-        "in³ (Cubid inches)": 0.0610237441,
+        "in³ (Cubic inches)": 0.0610237441,
         "y³ (Cubic yards)": 0.000001308
     },
     "gl (Galons)": {
-        "km³ (Cubic kilometers)": 1,
-        "m³ (Cubic meters)": 1,
-        "cm³ (Cubic centimeters)": 1,
-        "mm³ (Cubic milimeters)": 1,
-        "l (Liters)": 1,
+        "km³ (Cubic kilometers)": 0.00000000000378541,
+        "m³ (Cubic meters)": 0.00378541,
+        "cm³ (Cubic centimeters)": 3785.41,
+        "mm³ (Cubic milimeters)": 3785410,
+        "l (Liters)": 3.78541,
         "dl (Deciliters)": 1,
         "cd (Centiliters)": 1,
-        "ml (Mililiter)": 1,
+        "ml (Mililiter)": 3785.41,
         "gl (Galons)": 1,
+        "miles³ (Cubic miles)": 0.0000000000009081685531,
+        "ft³ (Cubic feets)": 0.1336804926,
+        "in³ (Cubic inches)": 230.99989113,
+        "y³ (Cubic yards)": 0.0049511294
+    },
+    "miles³ (Cubic miles)": {
+        "km³ (Cubic kilometers)": 4.16818,
+        "m³ (Cubic meters)": 4168180000,
+        "cm³ (Cubic centimeters)": 4168180000000000,
+        "mm³ (Cubic milimeters)": 4168179999999999500,
+        "l (Liters)": 4168180000000,
+        "dl (Deciliters)": 1,
+        "cd (Centiliters)": 1,
+        "ml (Mililiter)": 4168180000000000,
+        "gl (Galons)": 1101117184136,
         "miles³ (Cubic miles)": 1,
+        "ft³ (Cubic feets)": 147197887535,
+        "in³ (Cubic inches)": 254357949660781,
+        "y³ (Cubic yards)": 5451773612.4
+    },
+    "ft³ (Cubic feets)": {
+        "km³ (Cubic kilometers)": 0.00000000002831684659,
+        "m³ (Cubic meters)": 0.0283168466,
+        "cm³ (Cubic centimeters)": 28316.846592,
+        "mm³ (Cubic milimeters)": 28316846.592,
+        "l (Liters)": 28.316846592,
+        "dl (Deciliters)": 1,
+        "cd (Centiliters)": 1,
+        "ml (Mililiter)": 28316.846592,
+        "gl (Galons)": 7.480523006,
+        "miles³ (Cubic miles)": 0.000000000006793575755,
         "ft³ (Cubic feets)": 1,
-        "in³ (Cubid inches)": 1,
+        "in³ (Cubic inches)": 1728,
+        "y³ (Cubic yards)": 0.037037037
+    },
+    "in³ (Cubic inches)": {
+        "km³ (Cubic kilometers)": 0.000000000000016387064,
+        "m³ (Cubic meters)": 0.0000163871,
+        "cm³ (Cubic centimeters)": 16.387064,
+        "mm³ (Cubic milimeters)": 16387.064,
+        "l (Liters)": 0.016387064,
+        "dl (Deciliters)": 1,
+        "cd (Centiliters)": 1,
+        "ml (Mililiter)": 16.387064,
+        "gl (Galons)": 0.0043290064,
+        "miles³ (Cubic miles)": 0.000000000000003931467451,
+        "ft³ (Cubic feets)": 0.0005787037,
+        "in³ (Cubic inches)": 1,
+        "y³ (Cubic yards)": 0.0000214335
+    },
+    "y³ (Cubic yards)": {
+        "km³ (Cubic kilometers)": 0.0000000007645548579,
+        "m³ (Cubic meters)": 0.764554858,
+        "cm³ (Cubic centimeters)": 764554.85798,
+        "mm³ (Cubic milimeters)": 764554857.98,
+        "l (Liters)": 764.55485798,
+        "dl (Deciliters)": 1,
+        "cd (Centiliters)": 1,
+        "ml (Mililiter)": 764554.85798,
+        "gl (Galons)": 201.97412116,
+        "miles³ (Cubic miles)": 0.0000000001834265453,
+        "ft³ (Cubic feets)": 27,
+        "in³ (Cubic inches)": 46656,
         "y³ (Cubic yards)": 1
     }
 }
